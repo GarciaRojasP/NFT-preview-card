@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <main class="main flex">
+    <section class="card grid">
+      <div class="card__content">
+        <img src="images/image-equilibrium.jpg" alt="Cubo" class="card__img">
+        <figure class="card__view flex transition">
+          <img src="images/icon-view.svg" alt="Ojo de vista" class="card__view--img">
+        </figure>
+      </div>
+
+      <section class="card__texts">
+        <h1 class="card__title transition">Equilibrium #3429</h1>
+        <p class="card__paragraph">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <article class="card__data flex">
+          <p class="card__price flex">
+            <img src="images/icon-ethereum.svg" alt="icono" class="card__icon">
+            <span>0.041ETH</span>
+          </p>
+          <p class="card__time flex">
+            <img src="images/icon-clock.svg" alt="reloj" class="card__icon">
+            <span>3 days left</span>
+          </p>
+        </article>
+        <hr class="line">
+        <div class="card__author flex">
+          <img src="images/image-avatar.png" alt="persona" class="card__author--img">
+          <p class="card__author__data">
+            Creation of <span class="name transition">Jules wyvern</span>
+          </p>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

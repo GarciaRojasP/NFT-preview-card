@@ -1,0 +1,214 @@
+:root{
+
+    /*==================== COLOR PRIMARY ====================*/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --cyan-fondo: hsl(178, 100%, 50%,0.5);
+
+    /*==================== COLOR NEUTRAL ====================*/
+    --very-dark-blue-main: hsl(217, 54%, 11%);       /*(main-BG)*/
+    --very-dark-blue-card: hsl(216, 50%, 16%);       /*(card BG)*/
+    --very-dark-blue-line: hsl(215, 32%, 27%);        /*line*/
+    --white: hsl(0, 0%, 100%);
+    
+    /*==================== TYPOGRAPHY ====================*/
+    --body: 'Outfit', sans-serif;
+
+    /*==================== FONT ====================*/
+    --font-normal: 16px;
+    --font-medium: 18px;
+    --font-big: 1.5rem;
+
+    /*==================== FONT WEIGHT ====================*/
+    --w-light: 300;
+    --w-regular: 400; 
+    --w-semibold: 700; 
+
+    /*==================== lINE HEIGHT ====================*/
+    --line-height: 1.5;
+
+}
+
+
+/*==================== STYLE GENERAL ====================*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    margin:0;
+}
+
+body{
+    font-family: var(--body);
+    font-size: var(--font-normal);
+    line-height: var(--line-height);
+    background-color: var(--very-dark-blue-main);
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.transition{
+    transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+}
+
+.main{
+    gap:0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/*==================== CARD ====================*/
+.card{
+    grid-template-columns: 1fr;
+    background-color: var(--very-dark-blue-card);
+    width: 90%;
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0px 0px 10px -3px var(--grayish-blue);
+    animation: fade 0.8s 0.6s both ease-in;
+    -webkit-animation: fade 0.8s 0.6s both ease-in;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.card__content{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card__img{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.card__view{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--cyan-fondo);
+    width: 100%;
+    height: 100%;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.card__view--img{
+    display: block;
+    width: 13%;
+}
+
+.card__content:hover > .card__view{
+    opacity: 1;
+}
+
+.card__texts{
+    padding: 0 0.5rem 1rem;
+    color: var(--soft-blue);
+}
+
+.card__title{
+    font-size: var(--font-big);
+    font-weight: var(--w-semibold);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.card__title:hover{
+    color: var(--cyan);
+}
+
+.card__paragraph{
+    font-size: var(--font-medium);
+    margin: 1rem 0;
+}
+
+.card__data{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 1rem;
+}
+
+.card__price{
+    color: var(--cyan);
+    font-weight: var(--w-semibold);
+}
+
+.card__icon{
+    margin-right: 0.3rem;
+}
+
+.card__price, .card__time{
+    gap: 0;
+    align-items: center;
+}
+
+.line{
+  border-top: 1px solid var(--very-dark-blue-line);
+  margin-bottom: 1rem;
+}
+
+.card__author{
+    align-items: center;
+    justify-content: flex-start;
+    font-size: var(--font-medium);
+}
+
+.card__author--img{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.name{
+    color: var(--white);
+    cursor: pointer;
+}
+
+.name:hover{
+    color: var(--cyan);
+}
