@@ -21,12 +21,12 @@ Esto es una solución de la [NFT preview card component challenge on Frontend Me
 
 ### Screenshot
 
-![]()
+![nft-preview-card](https://github.com/GarciaRojasP/NFT-preview-card/assets/119550417/147a9b74-fae7-477d-90df-9cb6e5f9c979)
 
 ### Links
 
-- Ver código: [NFT preview card]()
-- Ver demo: [NFT preview card]()
+- Ver código: [NFT preview card](https://github.com/GarciaRojasP/NFT-preview-card)
+- Ver demo: [NFT preview card](https://nft-preview-card-henna-nu.vercel.app/)
 
 ## Mi proceso
 

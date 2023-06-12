@@ -182,7 +182,8 @@ body{
 }
 
 .line{
-  border-top: 1px solid var(--very-dark-blue-line);
+  border-top: 0px;
+  border-color: var(--soft-blue);
   margin-bottom: 1rem;
 }
 
