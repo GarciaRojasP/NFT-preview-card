@@ -40,6 +40,10 @@ h1, h2{
     margin:0;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     font-family: var(--body);
     font-size: var(--font-normal);
@@ -147,12 +151,14 @@ body{
 
 .card__title{
     font-size: var(--font-big);
-    font-weight: var(--w-semibold);
-    color: var(--white);
-    cursor: pointer;
 }
 
-.card__title:hover{
+.card__title--link{
+    color: var(--white);
+    font-weight: var(--w-semibold);
+}
+
+.card__title--link:hover{
     color: var(--cyan);
 }
 
